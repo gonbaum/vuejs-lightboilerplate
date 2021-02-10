@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app container-centered">
     <input
       v-model="message"
       type="text">
@@ -19,6 +19,12 @@ export default {
 </script>
 
 <style>
+
+.container-centered {
+  display:grid;
+  place-items: center;
+}
+
 .message {
   font-size: 18px;
   font-family: 'Roboto', sans-serif;
